@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form-body {
+  min-height: 100vh;
+
+  background: url(/img/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.left {
+  width: 40%;
+  padding-left: 50px;
+  margin: auto;
+}
+.left h1 {
+  padding-bottom: 20px;
+  color: white;
+  font-weight: 700;
+  width: 70%;
+  font-size: 40px;
+}
+.left p {
+  color: white;
+  font-weight: 400;
+}
+.form {
+  width: 50%;
+}
+.form-proper {
+  background-color: white;
+  width: 65%;
+  padding: 30px;
+  border-radius: 10px;
+}
+.form-top p {
+  background-color: hsl(248, 32%, 49%);
+  width: 65%;
+  padding: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  font-weight: 400;
+}
+
+input[type="text"] {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+}
+input[type="submit"] {
+  padding: 15px;
+  width: 100%;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.input-box {
+  padding-bottom: 10px;
+}
+.bottom p {
+  text-align: center;
+  font-size: 9px;
+  color: hsl(246, 25%, 77%);
+}
+@media (max-width: 426px) {
+  .form-body {
+    min-height: 100vh;
+
+    background: url(/img/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    flex-direction: column;
+
+    padding-bottom: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .left {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+  }
+  .form-top p {
+    width: 100%;
+  }
+  .form {
+    width: 90%;
+  }
+  .form-proper {
+    width: 100%;
+  }
+  .left h1 {
+    padding-bottom: 20px;
+
+    font-weight: 700;
+    width: 70%;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+  }
+  .left p {
+    padding-bottom: 20px;
+
+    font-weight: 400;
+    width: 70%;
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 70px;
+  }
+}
